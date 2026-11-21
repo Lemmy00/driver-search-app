@@ -1,0 +1,23 @@
+{
+  "name": "roadcred-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm run dev -w @roadcred/api\" \"npm run dev -w @roadcred/web\"",
+    "build": "npm run build -w @roadcred/shared && npm run build -w @roadcred/api && npm run build -w @roadcred/web",
+    "build:pages": "npm run build -w @roadcred/shared && npm run build -w @roadcred/api && npm run export:pages-fixture && npm run build -w @roadcred/web",
+    "export:pages-fixture": "node apps/web/scripts/export-demo-fixture.mjs",
+    "typecheck": "npm run build -w @roadcred/shared && npm run typecheck -w @roadcred/api && npm run typecheck -w @roadcred/web",
+    "test": "npm run test -w @roadcred/api"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.101.0"
+  }
+}

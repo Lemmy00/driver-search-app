@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="rctitle">
+  <title id="rctitle">RoadCred</title>
+  <defs>
+    <linearGradient id="rc-tile" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#17233a"/>
+      <stop offset="0.58" stop-color="#101827"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </linearGradient>
+    <linearGradient id="rc-stroke" x1="18" y1="14" x2="49" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.46" stop-color="#8bb8ff"/>
+      <stop offset="1" stop-color="#20c997"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="17" fill="url(#rc-tile)"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="16.25" fill="none" stroke="#ffffff" stroke-opacity="0.1"/>
+  <path d="M48.5 14.5 55 21l-6.5 6.5" fill="none" stroke="#20c997" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <path d="M21 47V17h17.5C45 17 49 21.1 49 26.4c0 5.6-4.2 9.5-10.5 9.5H21" fill="none" stroke="url(#rc-stroke)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m34 36 13 11" fill="none" stroke="#20c997" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m28.5 27.3 4 4 8-8.7" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
